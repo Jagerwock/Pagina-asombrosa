@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8"/>
+        <link type="text/css" rel="stylesheet" href="./style.css">
+        <script src="https://kit.fontawesome.com/42036b8e18.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+        <script src="script.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header id="encabezado">
+                <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+                <nav class="navbar">
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#acerca">Acerca de mi</a></li>
+                        <li><a href="#trabajos">Trabajos</a></li>
+                        <li><a href="servicios">Servicios</a></li>
+                        <li><a href="contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main id="principal">
+                <section class="Primero">
+                    
+                    <div>
+                        <h2 id="subtitulo-principal">Acerca de mi</h2>
+                        <p id="ayuda">Bienvenido a esta pagina asombrosa</p>
+                        <p>Hola otra vez! Esta pagina es asombrosa, ¿Por que? Te lo estaras preguntando. <br>Pues dejeme decirle que es asombrosa porque su nombre lo dice.</p>
+                    </div>
+                    <div>
+                        <img src="./Screenshot_89.png" alt="Gato viendo mi pagina">
+                    </div>
+                </section>
+
+                <section class="Segundo">
+                    <img class= "imagen" src="./Screenshot_90.png" alt="Un gato">
+                </section>
+
+                <h2 id="testimonio">Testimonios</h2>
+                <section class="Tercero">
+                    <div>
+                        <img src="./Boca-abierta.png" alt="asombrado">
+                        <p>Testimonio 1</p>
+                        <p>Esta persona se quedo en esa postura al ver mi <br>pagina web y gracias a eso Edvard Munch <br>pudo crear el susto. </p>
+                        <p><a href="Leer más">Leer más</a></p>
+                    </div>
+
+                    <div>
+                        <img src="./monsa-lisa.png" alt="mujer feliz">
+                        <p>Testimonio 2</p>
+                        <p>Esta mujer, esta feliz por ver mi pagina web <br>tan feliz, que Leonardo Da vinci pudo crear <br>la Mona Lisa.</p>
+                        <p><a href="Leer más">Leer más</a></p>
+                    </div>
+
+                    <div>
+                        <img src="./niño-asombrosa.png" alt="niño asombrado">
+                        <p>Testimonio 3</p>
+                        <p>Este niño se asombro al ver mi pagina web <br>tanto que su piel cambio de color. </p>
+                        <p><a href="Leer más">Leer más</a></p>
+                    </div>
+                </section>
+
+                <section class="Cuarta">
+                    <h2>Contacto</h2>
+                    <p><em>¡Esperamos tu asombrosa consulta!</em></p>
+
+                    <form action="" method="get" class="formulario" id="form">
+                        <div class="form-row">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" type="text"/>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="example@example.com"
+                                required
+                            />
+                        </div>
+                        <div class="form-row">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button>Enviar</button>
+                        </div>
+                        <p class="alertas" id="alertas"></p>
+                    </form>
+                </section>
+                <div id="footer">
+                    <footer>
+                        <h3 id="titulo-footer">Cosas asombrosas por hacer aqui</h3>
+                        <ul>
+                            <li>Nada</li>
+                            <li>Darme dinero</li>
+                            <li>Ver mi pagina asombrosa(Denme dinero)</li>
+                            <li>Donenme porfa</li>
+                        </ul>
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

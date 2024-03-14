@@ -1,0 +1,338 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Lobster", sans-serif;
+}
+
+
+header{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: powderblue;
+}
+
+@media(max-width: 1024px){
+    header{
+        background-color: #C2CAE8;
+    }
+}
+
+header, nav, ul{
+    display: flex;
+    gap: 1.5em;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+header, nav, ul, li, a{
+    color: #588a87;
+}
+
+header a i{
+    color:white;
+    font-size:24px;
+    padding: 0.5em;
+}
+
+footer{
+    color: #588a87;
+    background-color: powderblue;
+    width:100%;
+    font-size: 28px;
+    height: 350px;
+}
+
+@media (max-width: 1024px){
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        clear: both;
+        background-color: #C2CAE8;
+        padding: 25px;
+    }
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#titulo-footer{
+    color: chocolate;
+}
+
+.Primero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 28px;
+    background-color: gray;
+}
+
+.Segundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    width: 100%;
+}
+
+.Tercero{
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    height: auto;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    font-size: 28px;
+}
+
+@media (max-width: 1024px){
+    .Tercero {
+        width: 100%;
+        padding: 60px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.Tercero img{
+    border-radius: 20%;
+}
+
+
+
+#testimonio{
+    font-size: 42px;
+    padding: 0.4em;
+    margin-right: 5px;
+    color: #779CAB;
+}
+
+@media(max-width: 1024px){
+    #testimonio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 130px;
+    }
+}
+
+
+.imagen{
+    width:100%;
+    height: 600px;
+}
+
+.Cuarta{
+    box-sizing: border-box;
+    background-color: #A5ADCB;
+    font-size: 22px;
+    text-align: center;
+    width:100%;
+    margin: 30px 0 40px 0;
+    padding: 50px;
+}
+
+.Cuarta h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+  
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+  
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+}
+  
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+}
+  
+  
+.form-row button:hover {
+    background-color: #76aeed;
+}
+  
+  
+.form-row button:active {
+    background-color: #407fc7;
+}
+  
+
+@media(max-width: 1024px){
+    .checkbtn{
+        display: block;
+    }
+
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #263775;
+        
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: #374D9F;
+    }
+    
+    .Primero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #subtitulo-principal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Primero p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .Cuarta{
+        padding: 50px;
+    }
+
+}
+
+
+
+
